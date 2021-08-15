@@ -1,0 +1,564 @@
+/*PALETA DE COLORES https://colorhunt.co/palette/faebe0c9e4c5b5cda3c1ac95
+/******************* CONFIG DE PAG *****************************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/* 1 rem = 16px, Si aplicamos 62.5%, hace que 1 rem = 10px */
+html {
+  font-size: 62.5%;
+}
+/***************************************************************************************/
+/***************************************************************************************/
+
+body {
+  background-image: linear-gradient(rgb(201, 228, 197), rgb(193, 172, 149));
+  font-size: 1.6rem;
+}
+
+/******************* HEADER *************************************************************/
+header {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgb(250, 235, 224);
+  width: 100%;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 2rem;
+  color: grey;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+nav ul li:hover {
+  background: rgb(181, 205, 163);
+  transition: all 0.4s linear;
+}
+/*"Clinica veterinaria y pet shop" */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 7.5rem;
+}
+
+#tituloPrincipal {
+  color: grey;
+  float: right;
+  width: 80%;
+}
+/* logo principal */
+#logo {
+  width: 9rem;
+  height: "auto";
+  margin-left: 5rem;
+  --animate-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/***************************************************************************************/
+/***************************************************************************************/
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
+
+.container {
+  padding-top: 16.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 20rem);
+  grid-template-areas:
+    "textUno textUno__img"
+    "textDos__img textDos"
+    "textTres textTres__img";
+}
+
+.textUno {
+  grid-area: textUno;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tittleHome {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+}
+.paragraphHome {
+  font-size: 2rem;
+  font-family: "roboto";
+}
+
+.textUno__img {
+  grid-area: textUno__img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perroAbrigadoConCafe {
+  height: 30vh;
+  width: 55vh;
+}
+.textDos {
+  grid-area: textDos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.textDos__img {
+  grid-area: textDos__img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dosPerrosAbrigados {
+  height: 30vh;
+  width: 55vh;
+}
+
+.textTres {
+  grid-area: textTres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.textTres__img {
+  grid-area: textTres__img;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.mangaPerro {
+  height: 30vh;
+  width: 45vh;
+}
+
+/* SECCION::: VETERINARIA VETERINARIA VETERINARIA VETERINARIA VETERINARIA VETERINARIA VETERINARIA */
+
+.vete__tittle {
+  padding-top: 16.5rem;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+#formTurno {
+  width: 40rem;
+  background: grey;
+  padding: 4rem;
+  padding-right: 7rem;
+  margin: auto;
+  font-family: "calibri";
+  color: rgb(250, 235, 224);
+  margin-bottom: 5rem;
+  border-radius: 3rem;
+}
+
+#formTurno p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form__h3 {
+  margin-bottom: 2rem;
+}
+
+.controls {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+  border: 0.5rem solid rgb(193, 172, 149);
+  font-size: 1.8rem;
+}
+
+.container-Especies {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.botonAceptar {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+.botonAceptar:hover {
+  background-color: lightblue;
+}
+.botonAceptar:focus {
+  background-color: rgb(181, 205, 163);
+}
+/***************************************************************************************/
+/***************************************************************************************/
+
+/* SECCION::: PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP PETSHOP */
+
+.petshop__tittle {
+  padding-top: 16.5rem;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 25rem);
+  overflow: hidden;
+  grid-template-areas:
+    "marca1 marca2 marca3"
+    "marca4 marca5 marca6"
+    "descu1 descu2 descu3"
+    "descu4 descu5 descu6";
+
+  padding: 25px;
+  gap: 5px;
+
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.marcas1 {
+  grid-area: marca1;
+  justify-self: center;
+  align-self: center;
+}
+.marcas2 {
+  grid-area: marca2;
+  justify-self: center;
+  align-self: center;
+}
+.marcas3 {
+  grid-area: marca3;
+  justify-self: center;
+  align-self: center;
+}
+
+.marcas4 {
+  grid-area: marca4;
+  justify-self: center;
+  align-self: center;
+}
+
+.marcas5 {
+  grid-area: marca5;
+  justify-self: center;
+  align-self: center;
+}
+.marcas6 {
+  grid-area: marca6;
+  justify-self: center;
+  align-self: center;
+}
+
+.desc1 {
+  grid-area: descu1;
+  justify-self: center;
+  align-self: center;
+}
+.desc2 {
+  grid-area: descu2;
+  justify-self: center;
+  align-self: center;
+}
+.desc3 {
+  grid-area: descu3;
+  justify-self: center;
+  align-self: center;
+}
+.desc4 {
+  grid-area: descu4;
+  justify-self: center;
+  align-self: center;
+}
+.desc5 {
+  grid-area: descu5;
+  justify-self: center;
+  align-self: center;
+}
+.desc6 {
+  grid-area: descu6;
+  justify-self: center;
+  align-self: center;
+}
+/***************************************************************************************/
+/***************************************************************************************/
+
+/* SECCION::: NUESTROS PACIENTES NUESTROS PACIENTES NUESTROS PACIENTES NUESTROS PACIENTES */
+
+.paciente__tittle {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  /* background-color: gray; */
+  margin-left: 4rem;
+}
+
+.pacienteUma {
+  display: flex;
+  flex-direction: row;
+  width: 115rem;
+  height: 20rem;
+  justify-content: space-between;
+
+  font-family: "roboto";
+  font-size: 2.5rem;
+  margin-bottom: 10rem;
+  padding-left: 2rem;
+}
+
+#pacienteUma {
+  height: 45vh;
+  width: 45vh;
+  margin-left: 5rem;
+}
+
+.pacientePerseo {
+  display: flex;
+  flex-direction: row;
+  width: 100rem;
+  height: 20rem;
+  justify-content: space-between;
+
+  font-family: "roboto";
+  font-size: 2.5rem;
+  margin-bottom: 10rem;
+  padding-left: 2rem;
+}
+
+#pacientePerseoImg {
+  margin-left: 5rem;
+}
+
+/***************************************************************************************/
+/***************************************************************************************/
+
+/* SECCION::: CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO  */
+
+.contacto__tittle {
+  padding-top: 16.5rem;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+
+  margin-left: 4rem;
+}
+
+.contactoAll {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto";
+  font-size: 2.5rem;
+  align-items: center;
+  gap: 5rem;
+
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.avatar {
+  text-align: center;
+}
+
+/******************* FOOTER *************************************************************/
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(83, 83, 83);
+  background: rgb(193, 172, 149);
+}
+
+.container-footer-all {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 4rem;
+}
+
+.container-body {
+  /* Divido en columnas,*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1 {
+  /* 1200px/3 columnas = 400px = 40rem */
+  max-width: 40rem;
+}
+/* Mas informacion de la compania */
+.colum1 h2 {
+  font-size: 2.2rem;
+}
+
+.colum1 p {
+  font-size: 1.4rem;
+  color: rgb(83, 83, 83);
+  margin-top: 2rem;
+}
+
+.colum2 {
+  max-width: 40rem;
+}
+
+/* Redes Sociales */
+.colum2 h2 {
+  font-size: 2.2rem;
+}
+
+.colum2 .row {
+  margin-top: 2rem;
+}
+
+.row {
+  margin-top: 2rem;
+  display: flex;
+}
+
+/* tamaño de los iconos */
+.row img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.row label {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  color: rgb(83, 83, 83);
+}
+.colum3 {
+  max-width: 40rem;
+}
+
+.colum3 h2 {
+  font-size: 2.2rem;
+}
+
+.row2 {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.row2 img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.row2 label {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  max-width: 14rem;
+}
+
+/* .copyright */
+.container-footer {
+  width: 100%;
+  background: #101010;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: beige;
+  font-weight: bold;
+}
+
+.information a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+/* RESPONSIVE - acomoda contenido cuando llega a 1100px, reduce colum2,colum3 margin-top: 40px */
+@media screen and (max-widht: 1100px) {
+  .container-body {
+    flex-wrap: wrap;
+  }
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  nav ul li {
+    display: block;
+    font-family: arial, sans-serif;
+    font-size: 1.6rem;
+  }
+
+  nav ul li a {
+    display: block;
+
+    padding: 0.5rem 0.1rem;
+    color: grey;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+
+  nav ul li:hover {
+    background: rgb(181, 205, 163);
+    transition: all 0.4s linear;
+  }
+
+  h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+  }
+  /* "Clinica veterinaria y pet shop" */
+  #tituloPrincipal {
+    color: grey;
+    float: right;
+    width: 80%;
+  }
+  /* logo principal */
+  #logo {
+    width: 3rem;
+    height: "auto";
+    margin-left: 5rem;
+    flex-wrap: wrap;
+  }
+}
